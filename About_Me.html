@@ -70,18 +70,41 @@
 <br>
 <br>
    <h5>Guess What? I will like to Meet you too!</h5>
-    <form>
-        <p>name: <input type="text" name="name"></p>
-        <p>Email: <input type="text" name="email"> </p>
-        <p>Location <select name="type" id="county">
+  <form>
+        <div>
+            <label for="name"> Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your FullName">
+        </div>
+       
+        <div>
+            <label for="sex">Male</label>
+            <input type="radio" name="sex" value="male"> 
+            <label for="sex">Female</label>
+            <input type="radio" name="sex" value="female"> 
+            <label for="date">D.O.B</label>
+            <input type="date"id="date" >
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+       <input type="text" name="email" id="email"> 
+       
+       <label for="county">Location</label>
+       <select name="type" id="county">
             <option value="Alameda">Alameda</option>
             <option value="Contra Costa">Contra Costa</option>
             <option value="San Joaquin">San Joaquin</option>
-        </select></p>
-      <p>About You <textarea name="Aboutyou" id="desc" cols="30" rows="10"></textarea> </p> 
+        </select>
+
+        </div>
+       
+        <br>
+        <br>
+        <label for="desc">Tell Me More About You:</label>
+      <textarea name="Aboutyou" id="desc" cols="50" rows="10"></textarea> 
         <input type="submit" value="Send">
 
 
-    </form>     
+    </form>         
 </body>
 </html>
